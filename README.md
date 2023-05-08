@@ -9,15 +9,14 @@ To be run w
 To start and launch tests:
 
 ```
-$ git clone https://github.com/lumapps/test-goban.git
-$ cd test-goban
-$ python3 -m venv venv
-$ source venv/bin/activate
-$ pip install -r requirements.txt
-$ pytest .
+$ git clone https://github.com/Ljacmac-pro/lewis-goban.git
+$ cd lewis-goban
+$ npm i
+$ tsc
+$ npm test
 ```
 
-# Technical Test
+# Explanation of Technical Test
 
 The theme of this test is the game of go.
 

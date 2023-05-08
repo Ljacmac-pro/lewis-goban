@@ -5,7 +5,7 @@ The exercise has been rewritten in Typescript with accompanying Jest tests to te
 
 # How to launch the project
 
-To be run w
+To be run on Node Version 20 or higher
 To start and launch tests:
 
 ```

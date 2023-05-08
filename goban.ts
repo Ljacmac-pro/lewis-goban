@@ -24,9 +24,9 @@ export class Goban {
       return Status.OUT;
     } else {
     	switch(this.goban[y].charAt(x)) {
-    	case "." : return Status.EMPTY
-    	case "o" : return Status.WHITE
-    	case "#" : return Status.BLACK
+    	    case "." : return Status.EMPTY
+	    case "o" : return Status.WHITE
+    	    case "#" : return Status.BLACK
     	}
     }
   }
@@ -46,18 +46,18 @@ export class Goban {
     let surroundingCells = [[x+1,y],[x,y+1],[x-1,y],[x,y-1]];
   
     for (let cell of surroundingCells) {
-      if (self.get_status(cell[0],cell[1]) == Status.EMPTY) {
-        return false;
-	    }
-	  }
+        if (self.get_status(cell[0],cell[1]) == Status.EMPTY) {
+           return false;
+        }
+    }
          
     for (let cell of surroundingCells) {
-      const shapeString: string = JSON.stringify(shape);
-      const cellString: string = JSON.stringify(cell);
-      if (shapeString.indexOf(cellString) == -1 && self.get_status(cell[0],cell[1]) == positionStatus) {
-        return self.is_taken(self, shape, cell[0], cell[1]);
-      }
-  	}
+        const shapeString: string = JSON.stringify(shape);
+        const cellString: string = JSON.stringify(cell);
+        if (shapeString.indexOf(cellString) == -1 && self.get_status(cell[0],cell[1]) == positionStatus) {
+            return self.is_taken(self, shape, cell[0], cell[1]);
+        }
+    }
         
     return true;
   }

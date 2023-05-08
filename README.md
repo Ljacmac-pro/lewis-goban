@@ -12,7 +12,7 @@ To start and launch tests:
 ```
 $ git clone https://github.com/Ljacmac-pro/lewis-goban.git
 $ cd lewis-goban
-$ npm i
+$ npm install
 $ tsc
 $ npm test
 ```
